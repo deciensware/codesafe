@@ -1,0 +1,51 @@
+﻿<keepass:KeePassPage 
+    x:Class="KeePass.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:keepass="clr-namespace:KeePass.Utils"
+    Style="{StaticResource KeePassPage}">
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock x:Name="ApplicationTitle" Text="{StaticResource AppName}"
+                       Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock x:Name="PageTitle" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"
+                       Text="{Binding Path=Strings.About_PageTitle, Source={StaticResource UiStrings}}" />
+        </StackPanel>
+
+        <ScrollViewer Grid.Row="1" Margin="12,0,12,0">
+            <StackPanel Grid.Row="1" Margin="12,0,12,0">
+                <TextBlock Name="lblVersion" HorizontalAlignment="Center"
+                           Text="{Binding Path=Strings.About_Version, Source={StaticResource UiStrings}}" />
+                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <!--HyperlinkButton Content="{Binding Path=Strings.About_Review, Source={StaticResource UiStrings}}"
+                                     Click="lnkReview_Click" /-->
+                </StackPanel>
+
+                <TextBlock Text="{Binding Path=Strings.About_Project, Source={StaticResource UiStrings}}"
+                           HorizontalAlignment="Center" />
+                <HyperlinkButton Content="deciens.github.io/codesafe" TargetName="_blank"
+                                 NavigateUri="http://deciens.github.io/codesafe" />
+
+                <TextBlock Text="{Binding Path=Strings.About_Credits, Source={StaticResource UiStrings}}"
+                           HorizontalAlignment="Center" />
+
+                <HyperlinkButton Content="7Pass" TargetName="_blank"
+                             NavigateUri="http://github.com/7pass/7pass" />
+                <HyperlinkButton Content="KeePass" TargetName="_blank"
+                             NavigateUri="http://keepass.info" />
+                <HyperlinkButton Content="DropNet" TargetName="_blank"
+                             NavigateUri="http://dkdevelopment.net/what-im-doing/dropnet/" />
+                <HyperlinkButton Content="#ziplib" TargetName="_blank"
+                             NavigateUri="http://www.icsharpcode.net/opensource/sharpziplib/" />
+                <HyperlinkButton Content="Json.NET" TargetName="_blank"
+                             NavigateUri="http://json.codeplex.com/" />
+            </StackPanel>
+        </ScrollViewer>
+    </Grid>
+</keepass:KeePassPage>
