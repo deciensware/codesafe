@@ -10,7 +10,7 @@ namespace KeePass.Sources.DropBox
 {
     public partial class DropBoxAuth
     {
-        private const string CALL_BACK = "http://deciens.github.io/codesafe";
+        private const string CALL_BACK = "http://www.deciensware.com/codesafe";
 
         private readonly DropNetClient _client;
         private readonly ProgressIndicator _indicator;

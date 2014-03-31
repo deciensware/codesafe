@@ -6,6 +6,7 @@ using KeePass.Storage;
 using KeePass.Utils;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
+using KeePass.Sources;
 
 namespace KeePass
 {
@@ -66,6 +67,7 @@ namespace KeePass
             };
 
             RootFrame.Navigated += CompleteInitializePhoneApplication;
+            RootFrame.UriMapper = new AssociationUriMapper();
             RootFrame.NavigationFailed += RootFrame_NavigationFailed;
 
             _initialized = true;

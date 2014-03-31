@@ -113,7 +113,6 @@ namespace KeePass.Sources.DropBox
 
                             return;
                         }
-
                         new DatabaseInfo(_folder)
                             .SetKeyFile(hash);
                     }

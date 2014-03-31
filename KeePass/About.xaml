@@ -29,8 +29,8 @@
 
                 <TextBlock Text="{Binding Path=Strings.About_Project, Source={StaticResource UiStrings}}"
                            HorizontalAlignment="Center" />
-                <HyperlinkButton Content="deciens.github.io/codesafe" TargetName="_blank"
-                                 NavigateUri="http://deciens.github.io/codesafe" />
+                <HyperlinkButton Content="www.deciensware.com/codesafe" TargetName="_blank"
+                                 NavigateUri="http://www.deciensware.com/codesafe" />
 
                 <TextBlock Text="{Binding Path=Strings.About_Credits, Source={StaticResource UiStrings}}"
                            HorizontalAlignment="Center" />
