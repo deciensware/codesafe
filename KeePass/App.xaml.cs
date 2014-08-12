@@ -23,7 +23,9 @@ namespace KeePass
 
         public App()
         {
+#if !DEBUG
             UnhandledException += Application_UnhandledException;
+#endif
 
             if (Debugger.IsAttached)
                 Host.Settings.EnableFrameRateCounter = true;

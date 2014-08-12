@@ -29,14 +29,16 @@
 
                 <TextBlock Text="{Binding Path=Strings.About_Project, Source={StaticResource UiStrings}}"
                            HorizontalAlignment="Center" />
-                <HyperlinkButton Content="www.deciensware.com/codesafe" TargetName="_blank"
-                                 NavigateUri="http://www.deciensware.com/codesafe" />
+                <HyperlinkButton Content="www.deciensware.com" TargetName="_blank"
+                                 NavigateUri="http://www.deciensware.com/products/codesafe-pro/" />
 
                 <TextBlock Text="{Binding Path=Strings.About_Credits, Source={StaticResource UiStrings}}"
                            HorizontalAlignment="Center" />
 
                 <HyperlinkButton Content="7Pass" TargetName="_blank"
                              NavigateUri="http://github.com/7pass/7pass" />
+                <TextBlock Text="(CodeSafe Pro is open source" HorizontalAlignment="Center" FontSize="{StaticResource PhoneFontSizeSmall}" />
+                <TextBlock Text="and based off version 3.6 of 7Pass)" HorizontalAlignment="Center" FontSize="{StaticResource PhoneFontSizeSmall}" />
                 <HyperlinkButton Content="KeePass" TargetName="_blank"
                              NavigateUri="http://keepass.info" />
                 <HyperlinkButton Content="DropNet" TargetName="_blank"

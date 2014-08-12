@@ -882,4 +882,13 @@
   </Target>
   -->
   <ProjectExtensions />
+  <PropertyGroup>
+    <PreBuildEvent>copy /Y $(ProjectDir)Utils/ApiKeys.cs.my $(ProjectDir)Utils/ApiKeys.cs
+if $(ConfigurationName) == Debug (
+  copy /Y $(ProjectDir)Properties\WMAppManifest_Debug.xml $(ProjectDir)Properties\WMAppManifest.xml
+) else (
+  copy /Y $(ProjectDir)Properties\WMAppManifest_Release.xml $(ProjectDir)Properties\WMAppManifest.xml
+)
+</PreBuildEvent>
+  </PropertyGroup>
 </Project>

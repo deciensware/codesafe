@@ -10,7 +10,7 @@
     <Language code="pl" />
     <Language code="ru" />
   </Languages>
-  <App xmlns="" ProductID="{a0bafa4b-6bfa-46df-bfc6-8fcf2d3d769a}" Title="CodeSafe Pro" RuntimeType="Silverlight" Version="14.3.22" Genre="apps.normal" Author="Hieu Tran" Description="Advanced Password Manager compatible with Keepass" Publisher="DeciensWare" PublisherID="{9bc08057-c6bd-415b-895a-f9e013ca56cd}">
+  <App xmlns="" ProductID="{a0bafa4b-6bfa-46df-bfc6-8fcf2d3d769a}" Title="CodeSafe Pro" RuntimeType="Silverlight" Version="14.4.5" Genre="apps.normal" Author="Hieu Tran" Description="Advanced Password Manager compatible with Keepass" Publisher="DeciensWare" PublisherID="{9bc08057-c6bd-415b-895a-f9e013ca56cd}">
     <IconPath IsRelative="true" IsResource="false">ApplicationIcon.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_IDENTITY_DEVICE" />

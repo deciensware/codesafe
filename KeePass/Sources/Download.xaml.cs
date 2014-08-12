@@ -34,7 +34,7 @@ namespace KeePass.Sources
             ApplicationBar.IsVisible = true;
             _folder = NavigationContext.QueryString["folder"];
 
-            if (NavigationContext.QueryString.ContainsKey("fileToken"))
+            if (NavigationContext.QueryString.ContainsKey("fileToken") && !e.IsNavigationInitiator)
             {
                 string fileID = NavigationContext.QueryString["fileToken"];
                 string incomingFileName = SharedStorageAccessManager.GetSharedFileName(fileID);
@@ -91,9 +91,8 @@ namespace KeePass.Sources
                 Name = incomingFileName.RemoveKdbx(),
                 Type = SourceTypes.OneTime,
             });
+
             this.NavigateTo<MainPage>();
-            // Don't go back to load new DB
-            NavigationService.RemoveBackEntry();
         }
 
         private void lnkDropBox_Click(object sender, RoutedEventArgs e)
